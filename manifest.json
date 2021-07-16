@@ -1,0 +1,58 @@
+{
+  "name": "Magic Tab Groups",
+  "version": "1.0.0",
+  "description": "Save Tab Groups as Bookmarks. Automatically add new tabs to the correct group.",
+  "author": "Stefan Grothkopp",
+  "manifest_version": 3,
+  "short_name": "Magic Tab Groups",
+  "permissions": [
+	  "tabs",
+	  "tabGroups",
+	  "bookmarks"
+  ],
+  "background": {
+    "service_worker": "autotabgroups.js"
+  },
+  "commands": {
+    "rt-save-tab": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+S",
+        "windows": "Shift+Alt+S",
+        "mac": "MacCtrl+Shift+S"
+      },
+      "description": "Save selected tab"
+    },
+    "rt-save-group": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+A",
+        "windows": "Shift+Alt+A",
+        "mac": "MacCtrl+Shift+A"
+      },
+      "description": "Save selected tab group"
+    },
+    "rt-suspend-tab": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+C",
+        "windows": "Shift+Alt+C",
+        "mac": "MacCtrl+Shift+C"
+      },
+      "description": "Suspend selected tab"
+    },
+    "rt-suspend-group": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+X",
+        "windows": "Shift+Alt+X",
+        "mac": "MacCtrl+Shift+X"
+      },
+      "description": "Suspend selected tab group"
+    }
+
+  },
+  "icons": {
+    "16": "icon16.png",
+    "32": "icon32.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
+
